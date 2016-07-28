@@ -1,3 +1,425 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="36e2b438f9b0d68fb2482c8f389e249e32840cff">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.2.1_2fb20aa07272b18dd243162120727dcd9ef6db2f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.1.1_46e8bc64fd66398e49c617b0229e08fd8878670f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="5337354083e89ed67151859ab0b6b80935c60eaf">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.2.1_0329dd85e3a82abc696366fbd7324cddad78ed4b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="7bb417e9ac8645285342935679e75d371b58b62b">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.2.1_f206dd49cf97a53da3faf39537c0181b291a0d59\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.1.1_34047312d015063d5b4ec06cbc958dfc67b3b7ea\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2506c5893e125e2f9cfc522378e893620c21b109">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.2.1_4618c990589a708543aaea6690ab587882cd8cec\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="421b36cf4f0d3bbd75e8f28647fccf36674ef049">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.2.1_6a8d652bb5f185701a37a744976673d449a5e12e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0765979e802b1669c90dc36076559461d5eb6ad1">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.2.1_aee8b00d2da76ec08a56521274f053bd1dd9868f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_7630effb3d2b6e3166fb1321e2e9e9a8955cf668\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e0c2756cb5abe11652d83baf7399113639b6e9ec">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_214293ad8ce05346a7942b438455215f5975b522\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8aada8a0e9e9b3ecdda5e80f17c6a51a468e302a">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.2.1_e1e72ad5f3488a2387f45d22560baaaa7c5b636f\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3a42c5696fa39930d39770f7e5552a9c965fbe09">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.2.1_21a59f333fd19190d126e8baff8b37cccda365b1\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.1.1_e4b31e96f210566535ef7dc8a8a248e5263abf8a\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ac78f93fc89c497a65f9d9a352cd405996d2f65a">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.2.1_3fae238d3080f4482ea33dd11dbc102d24955d89\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.1.1_e26a815142e4cd6bf70212a7b9c8e2322e509fee\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="def5530cb13311617fc8f962e2a90225bb6904e2">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.2.1_dc3e57ea8713bfc02338b076f4196861515a6438\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05d2e01f33fb2097b51fce3f938dc37a75fe2d6b">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.2.1_50008bce681a7dbe7c2bcf501f0c302ba514ee42\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="081ced8ab77e606b6743c27cfe93dc450447b046">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.2.1_66714550e528430af194d6844b9586f767df6726\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d41b5d21cc9dd7d210f0ae82ac509ba7f091d611">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.2.1_32b3b94a94354fc98ceb68c2f8fdf77d3f9c7770\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="dd1907a2e855eeb2be8aa3486f3d4d4f1c8b22af">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.2.1_37fd24041abfca3bb206826a2884473c7294d483\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="07c569a77f437c5c71eac8b1b636a50bebb69a93">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.2.1_b45ea4b85b599a5634cf29949826e172b5cb6992\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="9f2282b9fc24f24c69665032dede1bc7201cf006">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.2.1_0f44f2d7b6dd9905a155b64442cf44ae45f40774\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="819c2c3a4fb135e085445d11131d069cf9c32b2a">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.2.1_de4236a7d3539abfbc8838d18ea798f2e713f535\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-contextmanager\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ccc963cafe59ce185c49f47baff7eedcb8589bdf">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-contextmanager-9.2.1_5c4e455253441d570820e0cd0075a1f267c8ee64\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d064f813cd835f17853e39221b247cf6a997a2db">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.2.1_9720bdd632b04ec2a1f2dfddab38310c760cb5f9\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e1bec33f1ec5367e25676638b430b9d585f3dbec">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.2.1_d14a21c713f59abba2c9c911d310fbded13dd8cc\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4b515e6e269bfe848f5b43ac09bce54d6617d4fd">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.2.1_7cecc9cad4ea7104ae0073eb14b39d56fdb3dd78\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6a0f2d219f82db499ac03d5a985c4eb3e83fc422">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.2.1_21ec7f2294ee7db6e678396e0626d90fc54a953c\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ee409046028e5657a2a69edaa2eba00d6511a74c">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.2.1_14c17879356ea153d5aee4638e02e2441d063ad5\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="0979debb5b4d955ddc0e80bb192f4f00c2f91750">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.2.1_4e4d0d80c022735718dfc39b95a67fcbb7287b37\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="310ef01419435979cc82847cf085799a8d00e7e9">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.2.1_d76bad732a4d845afb8d63f9d987f267ebfa4f47\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.1.1_c2566dae8ad20a61064b3b09fedf1e3eab43b989\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="bbd51be332bace144b3d16501ec0af379c3c8750">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.2.1_353118b6cb1464f9039b9731f30cfac5df147eaa\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_a29ac00feceb136baf38aa9b642eeda2f06b5e9e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="371c446595b734fe4e0b7103602021f1c53123d8">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e8583bce2426c1c429cc566af97ca1941ee87c3d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="b24c1a80d8ccaecee7b8b80209b4e273dc22b14d">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.2.1_6ebd0a5424f8b9abcf9fbecfd211a32e0894ed4e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="90eeba67a669f8fb24db0f821ef81703fe7a02bc">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.2.1_d3b6e8df1a6e2e373848be9f377958da35c6531b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f06a0705d7b8b9d18b00d056fe0e07bec75514e6">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.2.1_d826a79917bbaab40434d625c76feecde575df4b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="4c2b01baa64ba25f8dbdf7f7f828bc5664dab55e">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.2.1_f5b37137df15103f31d6514ae887a71e6191eea9\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6b896c1067633db41e9c10a3a5d0919c5c4cfc8c">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.2.1_17564843d54ef3edd5b207a683ac624532c2bf9d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Parteek\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.1.1_74d28264125c4743eaeee24c789d22c54226c5bb\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.1.1_05596c36b0f5423172c467eef5b7c77153023dde\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6d2f508d1a9fa0fbe1653595e484800c08afb42c">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.2.1_54942aa072babd6365851e2afaf38643fb17f97d\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="edf9a22ebf25281619265079aec8f5d433da1a5c">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.2.1_b750d7f8363f4adae57be8ef5b65f575534d24fd\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="428c9bac95b2f72921224e289553a04bea61cda5">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.2.1_7a1deab0c1311af1426d1cd6590e0fce2bee93f7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f3b0ff905873c91ab64addba30cc1e77bed34c4d">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.2.1_568e23c457ed631a174f4f5d8b33186e5b64aa60\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="1141496362c8876f0da4b645fbaf22c0a3618372">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.2.1_f00957f34c071af3c60cb0128c434e2d07acdaac\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="357a8702c49044417d4856861c8f435e7c74ef09">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.2.1_74a884488fb5c61cbaca737294d4cc228b6354f7\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3627eacd7f7cafb5e8ae683992e7b2f9b7dcab1a">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.2.1_31643fcd7c67febedbb8668043f3b37d00bf1d87\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ee19e33a798d11a5cf309a40155b8223fadcdeea">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.2.1_081986644027129f39e20268bd6c9135160eb290\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="77e2e4803396fa79009ace04d9be84184aafcc31">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.2.1_2736554aef40281a1436bce7e409607b1177db26\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.1.1_69d930137777edb41818eb167240b68408bbba81\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="a65d98c9409f271d3209f4cc1f7d8e0391665fa5">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.2.1_367b74457c8c8fd0b11b2e53085db1a2c875f30e\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="35a01d7cb4ff6b5976777bf5827fd8f206fb8757">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.2.1_4e76433c54df2ae0b3f3615a214a5380377ee738\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="152cba5ca28fd4a5191a8577a0fa96d61122041e">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.2.1_8fbea3679181a7c05602130ec26d8205d5bb3fda\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="89ab748a6c0ab6ac1d3671f2356d6181e8108bc5">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.2.1_3ade9c3969a485464af237b77d84e96f095b3a2b\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05a2710d284c03087013a667a324c9e2aba5bc91">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.2.1_8bf31ec9f21f2542dbc87ddb911b16c3faf7ccaa\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="48917c60ea81213ea39cbd7123996a5401106dc3">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.2.1_917e752a8ad1903900779c76d37920cd96680f12\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="e719de687ac45141de3dd613907860a495580af0">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.2.1_aaa39b41e8fd9409edaab86f8bc061712737ed63\classes.dex" />
+    </item>
+    <item
+        jar="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.2.1\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="6c09228ff931eb30b68dd27fe34ed90d978b6892">
+        <dex dex="D:\Courses\CMPE277\FinalProject\PocketBank\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.2.1_5b4d664c1b0195605ef3cd30255320182082566e\classes.dex" />
+    </item>
+
+</items>
