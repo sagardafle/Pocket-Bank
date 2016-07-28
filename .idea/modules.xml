@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pocketbank.iml" filepath="$PROJECT_DIR$/pocketbank.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/PocketBank.iml" filepath="$PROJECT_DIR$/PocketBank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+>>>>>>> f0706881e8862dcaca0d2b0e5e8ab9f2758b808d
     </modules>
   </component>
 </project>
