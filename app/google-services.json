@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1024508821247",
+    "firebase_url": "https://pocketbank-e122a.firebaseio.com",
+    "project_id": "pocketbank-e122a",
+    "storage_bucket": "pocketbank-e122a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024508821247:android:d3b029aec7b6cc70",
+        "android_client_info": {
+          "package_name": "com.pocketbank.lazylad91.pocketbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1024508821247-ms8o2kifvrn3l1qbjd1bunr3okacd371.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pocketbank.lazylad91.pocketbank",
+            "certificate_hash": "4CB52DEF3F83F64D18E3478A19AEC05BD1E17EAF"
+          }
+        },
+        {
+          "client_id": "1024508821247-nlccc25t2dbv57uv7er7ms63laue1m96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8y9ZZRKtrbTKwqTHAqMPSlNYEofR7jD8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1024508821247-nlccc25t2dbv57uv7er7ms63laue1m96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
