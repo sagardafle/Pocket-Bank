@@ -1,5 +1,8 @@
 package com.pocketbank.lazylad91.pocketbank;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -14,11 +17,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,10 +35,26 @@ public class HomeActivity extends AppCompatActivity
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private FirebaseAuth mAuth;
+    private static SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //code for checking login if not send to login page
+        Log.d("checkforLogin()",checkforLogin().toString());
+        if(!checkforLogin()){
+            Intent intent = new Intent();
+            Intent i = new Intent(HomeActivity.this, LoginActivity.class);
+            startActivity(i);
+            finish();
+        }
+
+        if(checkforIntro()){
+            Intent intent = new Intent();
+            Intent i = new Intent(HomeActivity.this, Intro.class);
+            startActivity(i);
+        }
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -73,6 +95,31 @@ public class HomeActivity extends AppCompatActivity
 
         tabLayout.setupWithViewPager(mViewPager);
         /* code for tabbed activity */
+    }
+
+    private boolean checkforIntro() {
+        if(sharedPref==null){
+            Context context = getApplicationContext();
+            sharedPref = context.getSharedPreferences(
+                    getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        }
+        Boolean defaultValue = true;
+        Boolean isIntroActive = sharedPref.getBoolean(getString(R.string.intro), defaultValue);
+        Log.d("isIntroActive",isIntroActive.toString());
+        return isIntroActive;
+    }
+
+    private Boolean checkforLogin() {
+        // Creating shared preferences code start
+        Context context = getApplicationContext();
+         sharedPref = context.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        // creating shared preferences code stop
+       // SharedPreferences sharedPref = HomeActivity.this.getPreferences(Context.MODE_PRIVATE);
+        Boolean defaultValue = false;
+        Boolean isloggedIn = sharedPref.getBoolean(getString(R.string.loggedInKey), defaultValue);
+        Log.d("isLoggedIn",isloggedIn.toString());
+        return isloggedIn;
     }
 
     @Override
@@ -124,13 +171,25 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-
+                logout();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void logout() {
+        mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putBoolean(getString(R.string.loggedInKey), false);
+        editor.commit();
+        Intent intent = new Intent(HomeActivity.this,LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
 
     // Code for tabbed activity start
 
@@ -190,10 +249,10 @@ public class HomeActivity extends AppCompatActivity
                     return new PlusTwoFragment();
                 case 3:
                     return new ItemFragment();
-
-
+                default:
+                    return new PlusOneFragment();
             }
-            return PlaceholderFragment.newInstance(position + 1);
+           // return PlaceholderFragment.newInstance(position + 1);
         }
 
         @Override

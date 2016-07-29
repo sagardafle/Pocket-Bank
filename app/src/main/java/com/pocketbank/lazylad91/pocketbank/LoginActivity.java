@@ -1,6 +1,8 @@
 package com.pocketbank.lazylad91.pocketbank;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -49,6 +51,7 @@ public class LoginActivity extends AppCompatActivity implements
     private Button mLoginButton;
     private EditText mEmailEditText;
     private EditText mPasswordEditText;
+    private static  SharedPreferences sharedPref;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,12 @@ public class LoginActivity extends AppCompatActivity implements
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN
                         | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);*/
+
+        // Creating shared preferences code start
+        Context context = getApplicationContext();
+        sharedPref = context.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        // creating shared preferences code stop
         mGoogleButton = (SignInButton) findViewById(R.id.google);
         mGoogleButton.setOnClickListener(this);
         mSignUpButton = (Button)findViewById(R.id.signUp);
@@ -92,9 +101,24 @@ public class LoginActivity extends AppCompatActivity implements
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = firebaseAuth.getCurrentUser();
                 if (user != null) {
+                   // SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putBoolean(getString(R.string.loggedInKey), true);
+                    editor.commit();
+
+                    //SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+                    Boolean defaultValue = false;
+                    Boolean isloggedIn = sharedPref.getBoolean(getString(R.string.loggedInKey), defaultValue);
+                    Log.d(TAG,isloggedIn.toString());
+
                     // User is signed in
                     Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
                 } else {
+
+                   // SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putBoolean(getString(R.string.loggedInKey), false);
+                    editor.commit();
                     // User is signed out
                     Log.d(TAG, "onAuthStateChanged:signed_out");
                 }
@@ -138,6 +162,7 @@ public class LoginActivity extends AppCompatActivity implements
         if (requestCode == RC_SIGN_IN) {
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             if (result.isSuccess()) {
+
                 // Google Sign In was successful, authenticate with Firebase
                 GoogleSignInAccount account = result.getSignInAccount();
                 firebaseAuthWithGoogle(account);
@@ -164,7 +189,24 @@ public class LoginActivity extends AppCompatActivity implements
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         Log.d(TAG, "signInWithCredential:onComplete:" + task.isSuccessful());
-
+                        if(task.isSuccessful()){
+                            //SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPref.edit();
+                            editor.putBoolean(getString(R.string.loggedInKey), true);
+                            Log.d(TAG,"================"+task.getResult().getUser().getUid());
+                            Log.d(TAG,"================"+task.getResult().getUser().getDisplayName());
+                            Log.d(TAG,"================"+task.getResult().getUser().getEmail());
+                            Log.d(TAG,"================"+task.getResult().getUser().getPhotoUrl().toString());
+                            editor.putString("uid",task.getResult().getUser().getUid());
+                            editor.putString("name",task.getResult().getUser().getDisplayName());
+                            editor.putString("email",task.getResult().getUser().getEmail());
+                            editor.putString("url",task.getResult().getUser().getPhotoUrl().toString());
+                            editor.commit();
+                            Intent intent = new Intent();
+                            Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                            startActivity(i);
+                            finish();
+                        }
                         // If sign in fails, display a message to the user. If sign in succeeds
                         // the auth state listener will be notified and logic to handle the
                         // signed in user can be handled in the listener.
@@ -228,6 +270,22 @@ public class LoginActivity extends AppCompatActivity implements
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
+                           // SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+                            SharedPreferences.Editor editor = sharedPref.edit();
+                            editor.putBoolean(getString(R.string.loggedInKey), true);
+                            Log.d(TAG,"================"+task.getResult().getUser().getUid());
+                            Log.d(TAG,"================"+task.getResult().getUser().getDisplayName());
+                            Log.d(TAG,"================"+task.getResult().getUser().getEmail());
+                            editor.putString("uid",task.getResult().getUser().getUid());
+                            editor.putString("name",task.getResult().getUser().getDisplayName());
+                            editor.putString("email",task.getResult().getUser().getEmail());
+                            editor.commit();
+                            Intent intent = new Intent();
+                            Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+                            startActivity(i);
+                            finish();
+                        }
                         Log.d(TAG, "signInWithEmail:onComplete:" + task.isSuccessful());
                         Log.d("check","Calling Sign in app"+task.getException());
                         // If sign in fails, display a message to the user. If sign in succeeds
@@ -243,6 +301,7 @@ public class LoginActivity extends AppCompatActivity implements
                         if (!task.isSuccessful()) {
                            // mStatusTextView.setText(R.string.auth_failed);
                         }
+
                        // hideProgressDialog();
                         // [END_EXCLUDE]
                     }
