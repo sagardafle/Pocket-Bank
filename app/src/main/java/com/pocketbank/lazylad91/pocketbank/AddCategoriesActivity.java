@@ -10,25 +10,25 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-public class AddCategoriesActivity extends AppCompatActivity implements View.OnClickListener{
+public class AddCategoriesActivity extends Activity {
 static String chosenCategory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_categories);
-//
-//        final EditText restaurantcategory = (EditText) findViewById (R.id.categoryrestaurants);
-//        restaurantcategory.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(AddCategoriesActivity.this, restaurantcategory.getText().toString(), Toast.LENGTH_LONG).show();
-//                returnDataToTransactionActivity(restaurantcategory.getText().toString());
-//            }
-//        });
+
 
 
         //returnDataToTransactionActivity(chosenCategory);
     }
+
+            public void onClick(View v) {
+                Log.d("Clicked" ,String.valueOf(v.getId()));
+                EditText pressededittext = (EditText)v;
+                chosenCategory = pressededittext.getText().toString();
+                returnDataToTransactionActivity(chosenCategory);
+            }
+
 
     private void returnDataToTransactionActivity(String selectedCategory) {
         Intent returnIntent = new Intent();
@@ -38,22 +38,11 @@ static String chosenCategory;
 
     }
 
-
     @Override
-    public void onClick(View view) {
-        View.OnClickListener myOnlyhandler = new View.OnClickListener() {
-            public void onClick(View v) {
-                Log.d("getId",String.valueOf(v.getId()));
-                switch(v.getId()) {
-//                    case R.id.b1:
-//                        // it was the first button
-//                        break;
-//                    case R.id.b2:
-//                        // it was the second button
-//                        break;
-
-                }
-            }
-        };
+    public void onResume(){
+        super.onResume();
     }
+
 }
+
+

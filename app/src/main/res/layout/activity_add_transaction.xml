@@ -110,6 +110,7 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="15dp"
                     android:hint="Pick a Date"
+                    android:id="@+id/transactiondate"
                     android:onClick="showDatePickerDialog" />
 
             </LinearLayout>

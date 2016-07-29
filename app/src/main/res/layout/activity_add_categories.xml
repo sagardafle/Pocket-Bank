@@ -43,6 +43,8 @@
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
                     android:background="@android:color/transparent"
+                    android:onClick="onClick"
+                    android:clickable="true"
                     android:editable="false"
                     android:text="Restaurant" />
             </LinearLayout>
@@ -65,8 +67,10 @@
                     android:id="@+id/transactionamount"
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
+                    android:clickable="true"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:background="@android:color/transparent"
                     android:editable="false"
                     android:text="Food and Beverages" />
@@ -92,6 +96,8 @@
                 android:layout_width="270dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
+                android:clickable="true"
+                android:onClick="onClick"
                 android:layout_marginTop="10dp"
                 android:background="@android:color/transparent"
                 android:editable="false"
@@ -116,6 +122,8 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     android:layout_marginTop="10dp"
                     android:background="@android:color/transparent"
                     android:editable="false"
@@ -145,6 +153,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
                     android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     android:background="@android:color/transparent"
                     android:editable="false"
                     android:text="Clothing" />
@@ -172,7 +182,10 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
+                    android:clickable="true"
                     android:background="@android:color/transparent"
                     android:editable="false"
                     android:text="Friends and Lovers" />
@@ -199,7 +212,9 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:background="@android:color/transparent"
                     android:editable="false"
                     android:text="Travel" />
@@ -229,7 +244,9 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:editable="false"
                     android:background="@android:color/transparent"
                     android:text="Movies" />
@@ -255,7 +272,9 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:editable="false"
                     android:background="@android:color/transparent"
                     android:text="Sports" />
@@ -281,7 +300,9 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:editable="false"
                     android:background="@android:color/transparent"
                     android:text="Children and Babies" />
@@ -307,7 +328,9 @@
                     android:layout_width="270dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="25dp"
+                    android:clickable="true"
                     android:layout_marginTop="10dp"
+                    android:onClick="onClick"
                     android:editable="false"
                     android:background="@android:color/transparent"
                     android:text="Children and Babies" />
