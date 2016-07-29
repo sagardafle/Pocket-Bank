@@ -10,32 +10,31 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.pocketbank.lazylad91.pocketbank.SignUpActivity">
 
-    <EditText
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailSignUp"
+            android:hint="Enter Email"/>
+        <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:hint="Enter Password"
-        android:id="@+id/passwordSignUp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"/>
+        android:id="@+id/passwordSignUp"/>
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:ems="10"
-        android:id="@+id/emailSignUp"
-        android:hint="Enter Email"
-        android:layout_above="@+id/passwordSignUp"
-        android:layout_alignLeft="@+id/passwordSignUp"
-        android:layout_alignStart="@+id/passwordSignUp"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign up"
         android:id="@+id/signUpButton1"
-        android:layout_below="@+id/passwordSignUp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_below="@+id/passwordSignUp"/>
+    </LinearLayout>
 </RelativeLayout>
