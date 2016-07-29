@@ -3,5 +3,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="pick_date">Pick a Date</string>
-    <string name="email"/>
+    <string name="email" />
+    <string name="save_expense">Save Expense</string>
 </resources>

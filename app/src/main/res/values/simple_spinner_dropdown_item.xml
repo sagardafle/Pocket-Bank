@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cards_array">
+        <item>Credit Card ending ... 1582</item>
+        <item>Debit Card Ending ... 2045</item>
+    </string-array>
+</resources>
