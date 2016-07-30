@@ -3,5 +3,6 @@
     <string-array name="cards_array">
         <item>Credit Card ending ... 1582</item>
         <item>Debit Card Ending ... 2045</item>
+        <item>Cash</item>
     </string-array>
 </resources>
