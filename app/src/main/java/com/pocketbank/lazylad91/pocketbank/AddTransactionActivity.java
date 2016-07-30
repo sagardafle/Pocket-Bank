@@ -171,7 +171,6 @@ public class AddTransactionActivity extends AppCompatActivity  {
         loadmorelayout.setVisibility(View.GONE);
         placeslayout.setVisibility(View.VISIBLE);
         imageslayout.setVisibility(View.VISIBLE);
-        spinnerlayout.setVisibility(View.VISIBLE);
     }
 
 
@@ -210,8 +209,9 @@ public class AddTransactionActivity extends AppCompatActivity  {
             case 100:  // Result from Google PlacePicker Intent
                 if (resultCode == RESULT_OK) {
                     Place place = PlacePicker.getPlace(data, AddTransactionActivity.this);
-                    String toastMsg = String.format("Place: %s", place.getName());
-                    Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
+//                    String toastMsg = String.format("Place: %s", place.getName());
+//                    Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
+                    Log.d("LatLng",  place.getLatLng().toString());
                     placepicker.setText(place.getName());
                 }
                 break;
