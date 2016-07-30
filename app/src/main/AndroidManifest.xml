@@ -36,7 +36,7 @@
         </activity>
         <activity
             android:name=".AddCategoriesActivity"
-            android:label="Add a Category">
+            android:label="Add Category">
         </activity>
         <activity android:name=".SignUpActivity">
         </activity>
