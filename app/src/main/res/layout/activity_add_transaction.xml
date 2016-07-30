@@ -131,14 +131,14 @@
                     android:layout_height="60dp"
                     android:layout_marginLeft="-5dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/payment" />
+                    android:src="@drawable/payment"/>
 
                 <Spinner
                     android:id="@+id/cards_spinner"
                     android:layout_width="180dp"
                     android:layout_height="20dp"
                     android:layout_marginLeft="12dp"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="20dp"/>
             </LinearLayout>
 
 
@@ -181,7 +181,7 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/googleplacesicon" />
+                    android:src="@drawable/googleplacesicon"/>
 
                 <TextView
                     android:id="@+id/transactionplaces"
