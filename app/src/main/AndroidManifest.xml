@@ -34,6 +34,10 @@
             android:name=".AddTransactionActivity"
             android:label="Add a Transaction">
         </activity>
+        <activity
+            android:name=".AddCategoriesActivity"
+            android:label="Add a Category">
+        </activity>
         <activity android:name=".SignUpActivity">
         </activity>
         <activity android:name=".Intro"
