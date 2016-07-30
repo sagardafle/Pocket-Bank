@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pocketbank.lazylad91.pocketbank">
+<manifest package="com.pocketbank.lazylad91.pocketbank"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- To access Google+ APIs: -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:name=".PocketBank"
@@ -18,7 +20,8 @@
             android:name=".LoginActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme">
+        </activity>
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
@@ -28,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".BudgetActivity"
             android:label="Budget Setup"
@@ -38,18 +42,25 @@
             <!--</intent-filter>-->
         </activity>
         <activity
-            android:name=".AddTransactionActivity"
-            android:label="Add a Transaction"
-            android:theme="@style/AppTheme"></activity>
-        <activity
             android:name=".AddCategoriesActivity"
-            android:label="Add Category"
-            android:theme="@style/AppTheme"></activity>
-        <activity android:name=".SignUpActivity"></activity>
+            android:label="Add Category">
+        </activity>
+        <activity android:name=".SignUpActivity">
+        </activity>
         <activity
             android:name=".Intro"
             android:label="Intro"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCTveex70RU01_u4V3ZNpkdhpjZt4zngfU"/>
+
+        <activity
+            android:name=".transactionlist"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

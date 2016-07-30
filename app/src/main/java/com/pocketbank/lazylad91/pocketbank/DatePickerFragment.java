@@ -38,6 +38,10 @@ public  class DatePickerFragment extends DialogFragment
         Log.d("Selected year", String.valueOf(year));
         Log.d("Selected month", String.valueOf(month));
         Log.d("Selected day", String.valueOf(day));
+        AddTransactionActivity.tYear = year;
+        AddTransactionActivity.tMonth = month;
+        AddTransactionActivity.tDate = day;
+
 
 
         datepickerbtn.setText(String.valueOf(month)+"/"+String.valueOf(day)+"/"+String.valueOf(year));
