@@ -253,7 +253,7 @@ public class HomeActivity extends AppCompatActivity
                 case 1:
                 return new PlusOneFragment();
                 case 2:
-                    return new PlusTwoFragment();
+                    return new transactionlist();
                 case 3:
                     return new ItemFragment();
                 default:

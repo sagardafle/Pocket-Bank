@@ -12,6 +12,10 @@ public class Category implements Serializable {
         this.image = image;
     }
 
+    public Category() {
+
+    }
+
     @Override
     public String toString() {
         return "Category{" +

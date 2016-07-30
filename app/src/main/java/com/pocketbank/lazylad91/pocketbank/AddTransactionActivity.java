@@ -1,7 +1,9 @@
 package com.pocketbank.lazylad91.pocketbank;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -27,7 +29,13 @@ import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.pocketbank.lazylad91.pocketbank.Constant.PocketBankConstant;
 import com.pocketbank.lazylad91.pocketbank.Model.Category;
+import com.pocketbank.lazylad91.pocketbank.Model.Location;
+import com.pocketbank.lazylad91.pocketbank.Model.PaymentMode;
+import com.pocketbank.lazylad91.pocketbank.Model.Transaction;
 
 public class AddTransactionActivity extends AppCompatActivity  {
 
@@ -40,6 +48,25 @@ public class AddTransactionActivity extends AppCompatActivity  {
     ImageView mcategoryImageView;
     LinearLayout placeslayout,imageslayout,spinnerlayout ;
     ImageButton uploadedgalleryimage;
+    private EditText mTransactionAmount;
+    private EditText mTransactioNotes;
+    private static Category selectedCategory;
+    public static int tYear;
+    public static int tMonth;
+    public static int tDate;
+    private static PaymentMode selectedPaymentMode;
+    private static Location selectedLocation;
+
+
+/*    private String mUserId;
+    private String transactionUrl;
+    private  static Firebase mRef;*/
+
+    // [START declare_database_ref]
+    private DatabaseReference mDatabase;
+    // [END declare_database_ref]
+
+    private static SharedPreferences sharedPref;
 
     private static final int REQUEST_IMAGE_CAPTURE = 0;
     private static final int REQUEST_GALLERY_IMAGE_CAPTURE = 1;
@@ -51,6 +78,9 @@ public class AddTransactionActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_transaction);
+
+        mTransactionAmount = (EditText) findViewById(R.id.transactionamount);
+        mTransactioNotes = (EditText) findViewById(R.id.transactionotes);
 
         /**
          * COde to load the google place picker
@@ -166,6 +196,23 @@ public class AddTransactionActivity extends AppCompatActivity  {
                 return true;
             }
         });
+
+
+        // Firebase code start //
+        /*try {
+            mRef = new Firebase(Constant.FIREBASE_URL);
+        } catch (Exception e) {
+            Log.d("FirebaseConnection","Unable to connect to firebase");
+        }
+*/
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        // Firebase code ending //
+
+        // Creating shared preferences code start
+        Context context = getApplicationContext();
+        sharedPref = context.getSharedPreferences(
+                getString(R.string.preference_file_key), Context.MODE_PRIVATE);
+        // creating shared preferences code stop
     }
 
     /**
@@ -213,6 +260,10 @@ public class AddTransactionActivity extends AppCompatActivity  {
             case 100:  // Result from Google PlacePicker Intent
                 if (resultCode == RESULT_OK) {
                     Place place = PlacePicker.getPlace(data, AddTransactionActivity.this);
+                    selectedLocation = new Location();
+                    selectedLocation.setLng(place.getLatLng().longitude);
+                    selectedLocation.setLat(place.getLatLng().latitude);
+                    selectedLocation.setName(place.getName().toString());
 //                    String toastMsg = String.format("Place: %s", place.getName());
 //                    Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
                     Log.d("LatLng", place.getLatLng().toString());
@@ -224,7 +275,7 @@ public class AddTransactionActivity extends AppCompatActivity  {
 
                 if (resultCode == Activity.RESULT_OK) {
                     Bundle bundle = data.getExtras();
-                    Category selectedCategory = (Category) bundle.getSerializable("category");
+                    selectedCategory = (Category) bundle.getSerializable("category");
                     categoryedittext.setText(selectedCategory.getName());
                     mcategoryImageView.setImageResource(getResources().getIdentifier(selectedCategory.getImage(), "drawable", getPackageName()));
                 }
@@ -261,10 +312,48 @@ public class AddTransactionActivity extends AppCompatActivity  {
         int id = item.getItemId();
 
         if (id == R.id.saveexpense) {
+            saveTransaction();
 
         }
         return super.onOptionsItemSelected(item);
     }
+
+    private void saveTransaction() {
+        Transaction transaction = new Transaction();
+        String selectedMonth = PocketBankConstant.monthMap.get(tMonth);
+        transaction.setAmount(Float.parseFloat(mTransactionAmount.getText().toString()));
+        transaction.setCategory(selectedCategory);
+        transaction.setLocation(selectedLocation);
+        transaction.setMonth(selectedMonth);
+        transaction.setDate(tDate);
+        transaction.setYear(tYear);
+        transaction.setNotes(mTransactioNotes.getText().toString());
+        String defaultValue = "null";
+        PaymentMode paymentMode = new PaymentMode();
+        paymentMode.setCardId(1);
+        paymentMode.setCardNumber(1234);
+        paymentMode.setCardType("Debit");
+        String uid = sharedPref.getString("uid", defaultValue);
+        transaction.setUid(uid);
+/*        DatabaseReference mypostref = mDatabase.push();
+        mypostref.setValue(transaction);
+        Log.d("keyforfire",mypostref.getKey().toString());*/
+
+        DatabaseReference mypostref = mDatabase.child(uid).child(String.valueOf(tYear)).child(selectedMonth).child("transactions").push();
+        mypostref.keepSynced(true);
+        mypostref.setValue(transaction);
+        String txnId = mypostref.getKey();
+        DatabaseReference mypostref1 = mDatabase.child(uid).child(String.valueOf(tYear)).child(selectedMonth).child("category").child(String.valueOf(selectedCategory.getId())).child(txnId).push();
+        mypostref1.setValue(transaction);
+        mypostref1.keepSynced(true);
+        String categoryId = mypostref1.getKey();
+        DatabaseReference mypostref2 = mDatabase.child(uid).child(String.valueOf(tYear)).child(selectedMonth).child("paymentMode").child(paymentMode.getCardType()).child(txnId).push();
+        mypostref2.setValue(transaction);
+        mypostref2.keepSynced(true);
+        String paymentId = mypostref1.getKey();
+        Log.d("keyfire", "txnId " + txnId + " categoryId " + categoryId + " paymentId " + paymentId);
+    }
+
 
 
 }

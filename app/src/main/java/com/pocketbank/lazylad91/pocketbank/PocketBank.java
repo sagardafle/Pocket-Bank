@@ -27,6 +27,17 @@ public class PocketBank extends Application {
         PocketBankConstant.categoryList.add(15, PocketBankConstant.drinks);
         PocketBankConstant.categoryList.add(16, PocketBankConstant.medical);
         PocketBankConstant.categoryList.add(17, PocketBankConstant.fitness);
-
+        PocketBankConstant.monthMap.put(1, "January");
+        PocketBankConstant.monthMap.put(2, "February");
+        PocketBankConstant.monthMap.put(3, "March");
+        PocketBankConstant.monthMap.put(4, "April");
+        PocketBankConstant.monthMap.put(5, "May");
+        PocketBankConstant.monthMap.put(6, "June");
+        PocketBankConstant.monthMap.put(7, "July");
+        PocketBankConstant.monthMap.put(8, "August");
+        PocketBankConstant.monthMap.put(9, "September");
+        PocketBankConstant.monthMap.put(10, "October");
+        PocketBankConstant.monthMap.put(11, "November");
+        PocketBankConstant.monthMap.put(12, "December");
     }
 }

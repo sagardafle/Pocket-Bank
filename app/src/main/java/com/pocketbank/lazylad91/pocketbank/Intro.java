@@ -36,9 +36,9 @@ public final class Intro extends AppIntro {
         editor.putBoolean(getString(R.string.intro), false);
         editor.commit();
 
-        addSlide(AppIntroFragment.newInstance("example", "sample", R.drawable.appicon,R.color.cast_intro_overlay_background_color));
-        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon,R.color.cast_intro_overlay_background_color));
-        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon,R.color.cast_intro_overlay_background_color));
+        addSlide(AppIntroFragment.newInstance("example", "sample", R.drawable.appicon, R.color.colorPrimary));
+        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon, R.color.colorPrimary));
+        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon, R.color.colorPrimary));
         // OPTIONAL METHODS
 
         // Override bar/separator color
@@ -49,7 +49,7 @@ public final class Intro extends AppIntro {
         showStatusBar(true);
 
         // Edit the color of the nav bar on Lollipop+ devices
-        setNavBarColor(R.color.cast_intro_overlay_background_color);
+        setNavBarColor(R.color.colorPrimary);
 
         // Hide Skip/Done button
         showSkipButton(true);
