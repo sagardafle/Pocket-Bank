@@ -8,4 +8,5 @@
     <color name="primary_dark">#303f9f</color>
     <color name="ripple">#F06292</color>
     <color name="white">#FFFFFF</color>
+    <color name="grey">#D3D3D3</color>
 </resources>

@@ -118,6 +118,7 @@
 
 
 
+
             <LinearLayout
                 android:id="@+id/spinnerlayout"
                 android:layout_width="wrap_content"
@@ -164,7 +165,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="1dp"
-                    android:src="@android:drawable/arrow_down_float" />
+                    android:src="@drawable/downarrow" />
             </LinearLayout>
 
             <LinearLayout
@@ -200,44 +201,84 @@
             <!--android:layout_width="fill_parent"-->
             <!--android:layout_height="fill_parent">-->
 
-            <LinearLayout
+
+            <RelativeLayout
                 android:id="@+id/imageslayouts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="280dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
                 android:orientation="horizontal"
+                android:background="@color/grey"
                 android:visibility="gone">
 
                 <ImageView
                     android:id="@+id/transactiodisplayimage"
                     android:layout_width="80dp"
-                    android:layout_marginLeft="-5dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:src="@drawable/uploadimage" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="60dp"
 
+                    android:layout_marginTop="10dp" />
 
                 <ImageButton
                     android:id="@+id/transactioncamerauploadimage"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@null"
+                    android:background="@color/grey"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="100dp"
+
                     android:hint="Camera"
-                    android:src="@drawable/camera" />
+                    android:src="@android:drawable/ic_menu_camera" />
 
                 <ImageButton
                     android:id="@+id/transactiongalleryuploadimage"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="10dp"
                     android:background="@null"
-                    android:hint="Camera"
+                    android:hint="Gallery"
                     android:src="@drawable/gallery" />
 
-            </LinearLayout>
+            </RelativeLayout>
+            <!--<LinearLayout-->
+            <!--android:id="@+id/imageslayouts"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:visibility="visible">-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/transactiodisplayimage"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_marginLeft="-5dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:src="@drawable/uploadimage" />-->
+
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/transactioncamerauploadimage"-->
+            <!--android:background="@color/grey"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="2dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:hint="Camera"-->
+            <!--android:src="@drawable/camera" />-->
+
+            <!--<ImageButton-->
+            <!--android:id="@+id/transactiongalleryuploadimage"-->
+            <!--android:layout_width="60dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:background="@null"-->
+            <!--android:hint="Camera"-->
+            <!--android:src="@drawable/gallery" />-->
+
+            <!--</LinearLayout>-->
 
         </LinearLayout>
     </ScrollView>

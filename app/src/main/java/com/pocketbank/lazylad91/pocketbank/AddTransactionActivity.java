@@ -20,6 +20,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -38,7 +39,8 @@ public class AddTransactionActivity extends AppCompatActivity  {
     ImageView uploadedimage;
     EditText categoryedittext;
     ImageView mcategoryImageView;
-    LinearLayout placeslayout,imageslayout,spinnerlayout ;
+    LinearLayout placeslayout, spinnerlayout;
+    RelativeLayout imageslayout;
     ImageButton uploadedgalleryimage;
 
     private static final int REQUEST_IMAGE_CAPTURE = 0;
@@ -114,7 +116,7 @@ public class AddTransactionActivity extends AppCompatActivity  {
         TextView loadmore = (TextView) findViewById(R.id.loadmorefields);
         ImageView loadmoreicon = (ImageView)  findViewById(R.id.dropdownlist);
         placeslayout = (LinearLayout)  findViewById(R.id.placeslayout);
-        imageslayout = (LinearLayout) findViewById(R.id.imageslayouts);
+        imageslayout = (RelativeLayout) findViewById(R.id.imageslayouts);
         spinnerlayout = (LinearLayout) findViewById(R.id.spinnerlayout);
         placeslayout.setVisibility(View.GONE);
 
