@@ -19,6 +19,14 @@ public class PocketBank extends Application {
         PocketBankConstant.categoryList.add(7, PocketBankConstant.movies);
         PocketBankConstant.categoryList.add(8, PocketBankConstant.sports);
         PocketBankConstant.categoryList.add(9, PocketBankConstant.childrensandbabies);
+        PocketBankConstant.categoryList.add(10, PocketBankConstant.insurance);
+        PocketBankConstant.categoryList.add(11, PocketBankConstant.car);
+        PocketBankConstant.categoryList.add(12, PocketBankConstant.gas);
+        PocketBankConstant.categoryList.add(13, PocketBankConstant.education);
+        PocketBankConstant.categoryList.add(14, PocketBankConstant.grocery);
+        PocketBankConstant.categoryList.add(15, PocketBankConstant.drinks);
+        PocketBankConstant.categoryList.add(16, PocketBankConstant.medical);
+        PocketBankConstant.categoryList.add(17, PocketBankConstant.fitness);
 
     }
 }
