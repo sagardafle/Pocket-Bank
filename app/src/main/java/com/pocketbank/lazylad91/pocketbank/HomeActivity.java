@@ -163,7 +163,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            addTransaction();
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {
@@ -179,6 +179,12 @@ public class HomeActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void addTransaction() {
+        Intent intent = new Intent(HomeActivity.this, AddTransactionActivity.class);
+        startActivity(intent);
+        //finish();
     }
 
     private void logout() {

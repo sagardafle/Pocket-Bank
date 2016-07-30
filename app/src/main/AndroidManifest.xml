@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="com.pocketbank.lazylad91.pocketbank"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -36,14 +36,14 @@
         </activity>
         <activity
             android:name=".AddCategoriesActivity"
-            android:label="Add a Category">
+            android:label="Add Category">
         </activity>
         <activity android:name=".SignUpActivity">
         </activity>
         <activity android:name=".Intro"
-            android:label="Intro"
+                  android:label="Intro"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        </activity>
+            </activity>
     </application>
 
 </manifest>
