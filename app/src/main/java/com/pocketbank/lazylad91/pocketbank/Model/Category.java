@@ -1,9 +1,11 @@
 package com.pocketbank.lazylad91.pocketbank.Model;
 
+import java.io.Serializable;
+
 /**
  * Created by Parteek on 7/29/2016.
  */
-public class Category {
+public class Category implements Serializable {
     public Category(int id, String name, String image) {
         this.name = name;
         this.id = id;

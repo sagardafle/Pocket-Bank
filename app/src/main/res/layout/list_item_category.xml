@@ -11,14 +11,12 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:id="@+id/categoryLayout"
-        android:clickable="true"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:id="@+id/categoryImage"
-            android:clickable="false"/>
+            android:id="@+id/categoryImage"/>
 
 
         <EditText
@@ -28,8 +26,6 @@
             android:layout_marginLeft="25dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"
-            android:onClick="onClick"
-            android:clickable="true"
             android:editable="false"/>
     </LinearLayout>
 

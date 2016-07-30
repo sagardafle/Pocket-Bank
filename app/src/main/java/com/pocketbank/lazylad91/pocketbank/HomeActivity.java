@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -50,7 +49,7 @@ public class HomeActivity extends AppCompatActivity
             finish();
         }
 
-        if(checkforIntro()){
+        if (checkforLogin() && checkforIntro()) {
             Intent intent = new Intent();
             Intent i = new Intent(HomeActivity.this, Intro.class);
             startActivity(i);

@@ -22,12 +22,12 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
 import com.google.android.gms.location.places.Place;
 import com.google.android.gms.location.places.ui.PlacePicker;
+import com.pocketbank.lazylad91.pocketbank.Model.Category;
 
 public class AddTransactionActivity extends AppCompatActivity  {
 
@@ -36,7 +36,8 @@ public class AddTransactionActivity extends AppCompatActivity  {
     LinearLayout loadmorelayout;
     Intent takePicture;
     ImageView uploadedimage;
-    static EditText  categoryedittext;
+    EditText categoryedittext;
+    ImageView mcategoryImageView;
     LinearLayout placeslayout,imageslayout,spinnerlayout ;
     ImageButton uploadedgalleryimage;
 
@@ -153,13 +154,16 @@ public class AddTransactionActivity extends AppCompatActivity  {
          */
 
         categoryedittext = (EditText) findViewById(R.id.transactioncategory);
-
+        mcategoryImageView = (ImageView) findViewById(R.id.categoryImage);
         categoryedittext.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Intent addcategoriesintent = new Intent(AddTransactionActivity.this, AddCategoriesActivity.class);
-                startActivityForResult(addcategoriesintent, GET_SELECTED_CATEGORY);
-                return true; // return is important...
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    Intent addcategoriesintent = new Intent(AddTransactionActivity.this, AddCategoriesActivity.class);
+                    startActivityForResult(addcategoriesintent, GET_SELECTED_CATEGORY);
+                    return true; // return is important...
+                }
+                return true;
             }
         });
     }
@@ -211,7 +215,7 @@ public class AddTransactionActivity extends AppCompatActivity  {
                     Place place = PlacePicker.getPlace(data, AddTransactionActivity.this);
 //                    String toastMsg = String.format("Place: %s", place.getName());
 //                    Toast.makeText(getApplicationContext(), toastMsg, Toast.LENGTH_LONG).show();
-                    Log.d("LatLng",  place.getLatLng().toString());
+                    Log.d("LatLng", place.getLatLng().toString());
                     placepicker.setText(place.getName());
                 }
                 break;
@@ -219,9 +223,10 @@ public class AddTransactionActivity extends AppCompatActivity  {
             case 2:    // Result from Categories Intent
 
                 if (resultCode == Activity.RESULT_OK) {
-                    String selectedcategory = data.getStringExtra("selectedCategory");
-                    categoryedittext.setText(selectedcategory);
-
+                    Bundle bundle = data.getExtras();
+                    Category selectedCategory = (Category) bundle.getSerializable("category");
+                    categoryedittext.setText(selectedCategory.getName());
+                    mcategoryImageView.setImageResource(getResources().getIdentifier(selectedCategory.getImage(), "drawable", getPackageName()));
                 }
                 if (resultCode == Activity.RESULT_CANCELED) {
                     //Write your code if there's no result

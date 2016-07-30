@@ -9,9 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,7 +18,7 @@ import com.pocketbank.lazylad91.pocketbank.Model.Category;
 
 import java.util.List;
 
-public class AddCategoriesActivity extends AppCompatActivity implements OnClickListener {
+public class AddCategoriesActivity extends AppCompatActivity {
 static String chosenCategory;
     private CategoryAdapter mAdapter;
     private RecyclerView recyclerView;
@@ -84,9 +82,16 @@ static String chosenCategory;
          */
         @Override
         public void onClick(View v) {
-           /* Intent intent = new Intent(getActivity(), ExpenseDetail.class);
+   /*        Intent intent = new Intent(getActivity(), ExpenseDetail.class);
             intent.putExtra("Expense_Id",mExpense.getId());
-            startActivity(intent);*/
+            startActivity(intent);**/
+            Intent returnIntent = new Intent();
+            Bundle bundle = new Bundle();
+            bundle.putSerializable("category", mCategory);
+            returnIntent.putExtras(bundle);
+            setResult(Activity.RESULT_OK, returnIntent);
+            Log.d("finishing", "finishing now");
+            finish();
         }
 
 
@@ -130,13 +135,13 @@ static String chosenCategory;
     }
 
 
-    @Override
+   /* @Override
     public void onClick(View view) {
         Log.d("Clicked", String.valueOf(view.getId()));
         EditText pressededittext = (EditText) view;
         chosenCategory = pressededittext.getText().toString();
         returnDataToTransactionActivity(chosenCategory);
-    }
+    }*/
 
 }
 
