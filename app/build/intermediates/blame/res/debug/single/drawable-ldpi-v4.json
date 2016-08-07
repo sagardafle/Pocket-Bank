@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ms__menu_down.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.jaredrummler\\material-spinner\\1.0.9\\res\\drawable-ldpi-v4\\ms__menu_down.png"
+    }
+]

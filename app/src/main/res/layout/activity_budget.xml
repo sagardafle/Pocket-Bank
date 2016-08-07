@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    xmlns:circular="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res/com.devadvance.circulartest"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pocketbank.lazylad91.pocketbank.CircularSeekBar
+            android:id="@+id/circularSeekBar1"
+            android:maxHeight="300sp"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:id="@+id/seekbarvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:value="HINT" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="200dp"
+        android:text="Salary" />
+
+    <TextView
+        android:id="@+id/salarydisplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="200dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/salaryseekbar"
+            android:maxHeight="500sp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:text="Shopping" />
+
+    <TextView
+        android:id="@+id/shoppingdisplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="250dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/shoppingseekbar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="275dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A" />
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp"
+        android:text="Travel" />
+
+    <TextView
+        android:id="@+id/traveldisplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="300dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/travelseekbar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="325dp"
+            app:bar_color="#C69E89"
+
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="350dp"
+        android:text="Restaurant" />
+
+    <TextView
+        android:id="@+id/restaurantdisplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="350dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/restaurantseekbar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="375dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A"
+            app:min_value="0" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:text="Savings" />
+
+    <TextView
+        android:id="@+id/savingsdisplayimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="410dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <app.minimize.com.seek_bar_compat.SeekBarCompat
+            android:id="@+id/savingsseekbar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="435dp"
+            app:bar_color="#C69E89"
+            app:bar_highlight_color="#A54B17"
+            app:corner_radius="10"
+            app:data_type="_integer"
+            app:left_thumb_color="#775E4F"
+            app:left_thumb_color_pressed="#4C2D1A"
+            app:min_value="0" />
+    </LinearLayout>
+
+</RelativeLayout>

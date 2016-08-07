@@ -7,6 +7,7 @@ import android.support.v4.app.DialogFragment;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.TextView;
 
 import java.util.Calendar;
 
@@ -16,11 +17,13 @@ import java.util.Calendar;
 public  class DatePickerFragment extends DialogFragment
         implements DatePickerDialog.OnDateSetListener {
     static Button datepickerbtn;
+    static TextView diplayView;
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the current date as the default date in the picker
          datepickerbtn = (Button) getActivity().findViewById(R.id.transactiondate);
+        diplayView = (TextView) getActivity().findViewById(R.id.dateTextView);
         final Calendar c = Calendar.getInstance();
         int year = c.get(Calendar.YEAR);
         int month = c.get(Calendar.MONTH);
@@ -41,8 +44,7 @@ public  class DatePickerFragment extends DialogFragment
         AddTransactionActivity.tYear = year;
         AddTransactionActivity.tMonth = month;
         AddTransactionActivity.tDate = day;
-
-
+//        diplayView.setText(String.valueOf(month)+"/"+String.valueOf(day)+"/"+String.valueOf(year));
 
         datepickerbtn.setText(String.valueOf(month)+"/"+String.valueOf(day)+"/"+String.valueOf(year));
     }

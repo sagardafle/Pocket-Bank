@@ -1,12 +1,15 @@
 package com.pocketbank.lazylad91.pocketbank;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -22,8 +25,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.google.firebase.auth.FirebaseAuth;
+import com.pocketbank.lazylad91.pocketbank.Services.ZoomOutPageTransformer;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -54,6 +61,11 @@ public class HomeActivity extends AppCompatActivity
             Intent i = new Intent(HomeActivity.this, Intro.class);
             startActivity(i);
         }
+        if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+
+        }
+
         setContentView(R.layout.activity_home);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -86,7 +98,8 @@ public class HomeActivity extends AppCompatActivity
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
-
+        mViewPager.setCurrentItem(1);
+        mViewPager.setPageTransformer(true, new ZoomOutPageTransformer());
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
 /*        tabLayout.addTab(tabLayout.newTab().setText("List").setIcon(R.mipmap.iconrecy));
         tabLayout.addTab(tabLayout.newTab().setText("Card View").setIcon(R.mipmap.iconcard));*/
@@ -96,6 +109,35 @@ public class HomeActivity extends AppCompatActivity
 
         tabLayout.setupWithViewPager(mViewPager);
         /* code for tabbed activity */
+
+        View hView =  navigationView.inflateHeaderView(R.layout.nav_header_home);
+        ImageView imgvw = (ImageView)hView.findViewById(R.id.imageView);
+        TextView displayemailid = (TextView)hView.findViewById(R.id.emailtextView);
+
+
+        String defaultValue = "null";
+
+        String uid = sharedPref.getString("photo", defaultValue);
+        String imgurl = sharedPref.getString("url",defaultValue);
+        String useremailid = sharedPref.getString("email",defaultValue);
+
+        Log.d("imgurl", imgurl);
+        Log.d("emailid", useremailid);
+
+
+        displayemailid.setText(useremailid);
+
+        Glide
+                .with(getApplicationContext())
+                .load(imgurl)
+                .override(100, 50)
+                .crossFade()
+                .into(imgvw);
+
+
+
+
+
     }
 
     private boolean checkforIntro() {
@@ -165,13 +207,18 @@ public class HomeActivity extends AppCompatActivity
             addTransaction();
         } else if (id == R.id.nav_gallery) {
 
+            addBudgets();
+
         } else if (id == R.id.nav_slideshow) {
+            exportPDF();
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        }
+//        else if (id == R.id.nav_manage) {
+//
+//        } else if (id == R.id.nav_share) {
+//
+//        }
+        else if (id == R.id.nav_send) {
                 logout();
         }
 
@@ -179,6 +226,19 @@ public class HomeActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void addBudgets() {
+        Intent intent = new Intent(HomeActivity.this, BudgetActivity.class);
+        startActivity(intent);
+        //finish();
+    }
+
+private void exportPDF() {
+        Intent intent = new Intent(HomeActivity.this, PrintTransaction.class);
+        startActivity(intent);
+        //finish();
+    }
+
 
     private void addTransaction() {
         Intent intent = new Intent(HomeActivity.this, AddTransactionActivity.class);
@@ -251,13 +311,13 @@ public class HomeActivity extends AppCompatActivity
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position){
                 case 1:
-                return new PlusOneFragment();
+                    return new homeFragment();
                 case 2:
                     return new transactionlist();
                 case 3:
-                    return new ItemFragment();
+                    return new chartFragment();
                 default:
-                    return new PlusOneFragment();
+                    return new chartFragment();
             }
            // return PlaceholderFragment.newInstance(position + 1);
         }
@@ -272,14 +332,53 @@ public class HomeActivity extends AppCompatActivity
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "SECTION 1";
+                    return "Analytics";
                 case 1:
-                    return "SECTION 2";
+                    return "Dashboard";
                 case 2:
-                    return "SECTION 3";
+                    return "Transactions";
             }
             return null;
         }
     }
     // code for tabbed activity ended
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode) {
+            case 1:
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d("test","Test");
+                    if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                        requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, 2);
+
+                    }
+                    return;
+                } else {
+                    // Permission Denied
+                    //Toast.makeText(HomeActivity.this, "Application Wont work", Toast.LENGTH_SHORT)
+                    //.show();
+                    return;
+                    /*if (mMap != null)
+                        onMapReady(mMap);*/
+                }
+            case 2:
+                if (grantResults.length > 0
+                        && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Log.d("test","Test");
+                        return;
+                } else {
+                    // Permission Denied
+                    //Toast.makeText(HomeActivity.this, "Application Wont work", Toast.LENGTH_SHORT)
+                    //.show();
+                    return;
+                    /*if (mMap != null)
+                        onMapReady(mMap);*/
+                }
+            default:
+                super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+    }
 }

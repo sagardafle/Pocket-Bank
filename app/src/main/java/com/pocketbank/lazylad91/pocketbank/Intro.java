@@ -36,9 +36,9 @@ public final class Intro extends AppIntro {
         editor.putBoolean(getString(R.string.intro), false);
         editor.commit();
 
-        addSlide(AppIntroFragment.newInstance("example", "sample", R.drawable.appicon, R.color.colorPrimary));
-        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon, R.color.colorPrimary));
-        addSlide(AppIntroFragment.newInstance("kiio", "sample", R.drawable.appicon, R.color.colorPrimary));
+        addSlide(AppIntroFragment.newInstance("Sign in with Google", "One click and you are sign in", R.drawable.googles, R.color.white));
+        addSlide(AppIntroFragment.newInstance("Add Expenses", "Add Expenses on your ease now", R.drawable.introt, R.color.white));
+        addSlide(AppIntroFragment.newInstance("Setup your Budget", "Now keep track of your savings", R.drawable.intro, R.color.white));
         // OPTIONAL METHODS
 
         // Override bar/separator color
@@ -84,6 +84,7 @@ public final class Intro extends AppIntro {
         Intent intent = new Intent();
         Intent i = new Intent(this, HomeActivity.class);
         startActivity(i);
+        finish();
     }
 
     @Override
@@ -97,6 +98,7 @@ public final class Intro extends AppIntro {
         Intent intent = new Intent();
         Intent i = new Intent(this, HomeActivity.class);
         startActivity(i);
+        finish();
     }
 
     @Override

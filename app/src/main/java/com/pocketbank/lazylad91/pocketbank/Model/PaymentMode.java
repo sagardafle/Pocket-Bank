@@ -19,6 +19,12 @@ public class PaymentMode implements Serializable {
 
     }
 
+    public PaymentMode(String cardType, int cardNumber, int cardId) {
+        this.cardType = cardType;
+        this.cardNumber = cardNumber;
+        this.cardId = cardId;
+    }
+
     private String cardType;
     private int cardNumber;
 

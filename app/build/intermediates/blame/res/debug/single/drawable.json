@@ -1,0 +1,466 @@
+[
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\appicon.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\appicon.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\homefragment.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\homefragment.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorydrinks.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorydrinks.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle_drawable.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.minimize.library\\seekbar-compat\\0.2.5\\res\\drawable\\circle_drawable.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_menu_overflow_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\line.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.minimize.library\\seekbar-compat\\0.2.5\\res\\drawable\\line.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ms__arrow.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.jaredrummler\\material-spinner\\1.0.9\\res\\drawable\\ms__arrow.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\childrensandbabies.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\childrensandbabies.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\material_flat.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\material_flat.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button1.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\button1.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\introt.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\introt.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\googles.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\googles.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_action_up_caret.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\ic_action_up_caret.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\internetbill.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\internetbill.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\googlesign.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\googlesign.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\phonebill.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\phonebill.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\nexus2cee_unnamed12.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\nexus2cee_unnamed12.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fap_addcategory.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\fap_addcategory.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addtransactionfab.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\addtransactionfab.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\restaurant.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\restaurant.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorygrocery.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorygrocery.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\camera.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\camera.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_drawable.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.minimize.library\\seekbar-compat\\0.2.5\\res\\drawable\\progress_drawable.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downloadtransaction.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\downloadtransaction.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\dollara.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\dollara.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\addtransactions.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\addtransactions.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonadd.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\buttonadd.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorydrink.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorydrink.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\side_nav_bar.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\side_nav_bar.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\payment.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\payment.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_dot_white.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.github.paolorotolo\\appintro\\3.4.0\\res\\drawable\\indicator_dot_white.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\category.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\category.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icyourindicator.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\icyourindicator.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\downarrow.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\downarrow.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\backicon.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\backicon.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryinsurance.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categoryinsurance.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\moneywallet.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\moneywallet.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorycar.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorycar.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gallery.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\gallery.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\clothing.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\clothing.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fap_addbtn.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\fap_addbtn.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fap_addtransaction.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\fap_addtransaction.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\traveller.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\traveller.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notes.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\notes.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorygas.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorygas.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\appicons.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\appicons.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sports.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\sports.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_dot_grey.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.github.paolorotolo\\appintro\\3.4.0\\res\\drawable\\indicator_dot_grey.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\googlelocationimage.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\googlelocationimage.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\foodandbeverages.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\foodandbeverages.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorymedical.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorymedical.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mdpi.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\mdpi.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\movies.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\movies.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\tick_green.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\tick_green.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\intro.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\intro.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\download.jpg",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\download.jpg"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\seetransactions.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\seetransactions.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gifts.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\gifts.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryinternet.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categoryinternet.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ms__drawable.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.jaredrummler\\material-spinner\\1.0.9\\res\\drawable\\ms__drawable.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\savemoney.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\savemoney.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\greycorner.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\greycorner.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\gg.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\gg.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\googlelocationimagess.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\googlelocationimagess.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\uploadimage.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\uploadimage.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\vertical_divider_1.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\vertical_divider_1.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryrestaurant.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categoryrestaurant.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryphone.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categoryphone.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\calendar.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\calendar.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\friendsandlovers.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\friendsandlovers.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\24.1.1\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\charts.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\charts.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categorytravel.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categorytravel.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\categoryeducation.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\categoryeducation.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_comment_24dp.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\ic_comment_24dp.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.2.1\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_monetization_on_black_24dp.png",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\drawable\\ic_monetization_on_black_24dp.png"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    }
+]

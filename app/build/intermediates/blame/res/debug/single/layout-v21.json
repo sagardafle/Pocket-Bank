@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-places\\9.2.1\\res\\layout-v21\\place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\intro_layout.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.github.paolorotolo\\appintro\\3.4.0\\res\\layout-v21\\intro_layout.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\intro_layout2.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\exploded-aar\\com.github.paolorotolo\\appintro\\3.4.0\\res\\layout-v21\\intro_layout2.xml"
+    }
+]

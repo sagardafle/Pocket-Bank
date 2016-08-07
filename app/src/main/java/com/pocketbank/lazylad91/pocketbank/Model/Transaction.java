@@ -20,6 +20,16 @@ public class Transaction implements Serializable {
     private int year;
     private int date;
     private float amount;
+
+    public String getDisplayImage() {
+        return displayImage;
+    }
+
+    public void setDisplayImage(String displayImage) {
+        this.displayImage = displayImage;
+    }
+
+    private String displayImage;
     private Category category;
     private PaymentMode mPaymentMode;
     private String notes;

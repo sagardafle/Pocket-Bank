@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\menu\\activity_home_drawer.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\menu\\activity_home_drawer.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\menu\\saveexpense.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\menu\\saveexpense.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\menu\\home.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\menu\\home.xml"
+    },
+    {
+        "merged": "D:\\Courses\\PocketBank\\pocketbank\\app\\build\\intermediates\\res\\merged\\debug\\menu\\savebudget.xml",
+        "source": "D:\\Courses\\PocketBank\\pocketbank\\app\\src\\main\\res\\menu\\savebudget.xml"
+    }
+]

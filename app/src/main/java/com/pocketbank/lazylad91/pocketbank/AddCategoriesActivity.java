@@ -1,6 +1,5 @@
 package com.pocketbank.lazylad91.pocketbank;
 
-import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

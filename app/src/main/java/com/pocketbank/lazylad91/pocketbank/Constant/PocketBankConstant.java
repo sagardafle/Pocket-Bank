@@ -1,6 +1,7 @@
 package com.pocketbank.lazylad91.pocketbank.Constant;
 
 import com.pocketbank.lazylad91.pocketbank.Model.Category;
+import com.pocketbank.lazylad91.pocketbank.Model.PaymentMode;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -29,7 +30,10 @@ public class PocketBankConstant {
     public static Category medical = new Category(16, "Medical", "categorymedical");
     public static Category fitness = new Category(17, "Fitness", "categoryfitness");
 
-
+    public static PaymentMode Cash = new PaymentMode("cash",1,1);
+    public static PaymentMode Debit = new PaymentMode("debit",2,2);
+    public static PaymentMode Credit = new PaymentMode("credit",3,3);
     /*constant for month*/
     public static HashMap<Integer, String> monthMap = new HashMap<>();
+    public static HashMap<Integer,PaymentMode> paymentMap = new HashMap<>();
 }

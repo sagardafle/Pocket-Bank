@@ -6,17 +6,21 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -25,6 +29,7 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -38,6 +43,8 @@ import com.pocketbank.lazylad91.pocketbank.Model.Location;
 import com.pocketbank.lazylad91.pocketbank.Model.PaymentMode;
 import com.pocketbank.lazylad91.pocketbank.Model.Transaction;
 
+import java.io.ByteArrayOutputStream;
+
 public class AddTransactionActivity extends AppCompatActivity  {
 
     TextView placepicker;
@@ -45,6 +52,8 @@ public class AddTransactionActivity extends AppCompatActivity  {
     LinearLayout loadmorelayout;
     Intent takePicture;
     ImageView uploadedimage;
+    String transactionimage;
+    String pathToImage;
     EditText categoryedittext;
     ImageView mcategoryImageView;
     LinearLayout placeslayout, spinnerlayout;
@@ -80,6 +89,10 @@ public class AddTransactionActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_transaction);
+
+        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeButtonEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
 
         mTransactionAmount = (EditText) findViewById(R.id.transactionamount);
         mTransactioNotes = (EditText) findViewById(R.id.transactionotes);
@@ -142,27 +155,27 @@ public class AddTransactionActivity extends AppCompatActivity  {
             }
 
         });
-        loadmorelayout = (LinearLayout) findViewById(R.id.loadmoredata) ;
-        TextView loadmore = (TextView) findViewById(R.id.loadmorefields);
-        ImageView loadmoreicon = (ImageView)  findViewById(R.id.dropdownlist);
+        //loadmorelayout = (LinearLayout) findViewById(R.id.loadmoredata) ;
+//        TextView loadmore = (TextView) findViewById(R.id.loadmorefields);
+//        ImageView loadmoreicon = (ImageView)  findViewById(R.id.dropdownlist);
         placeslayout = (LinearLayout)  findViewById(R.id.placeslayout);
         imageslayout = (RelativeLayout) findViewById(R.id.imageslayouts);
         spinnerlayout = (LinearLayout) findViewById(R.id.spinnerlayout);
-        placeslayout.setVisibility(View.GONE);
 
-        loadmore.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                loadotherfields();
-            }
-        });
 
-        loadmoreicon.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v){
-                loadotherfields();
-            }
-        });
+//        loadmore.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                loadotherfields();
+//            }
+//        });
+//
+//        loadmoreicon.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                loadotherfields();
+//            }
+//        });
 
 
         /**
@@ -171,7 +184,7 @@ public class AddTransactionActivity extends AppCompatActivity  {
          */
 
 
-        Spinner spinner = (Spinner) findViewById(R.id.cards_spinner);
+        final Spinner spinner = (Spinner) findViewById(R.id.cards_spinner);
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.cards_array, android.R.layout.simple_spinner_item);
@@ -179,6 +192,19 @@ public class AddTransactionActivity extends AppCompatActivity  {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                              @Override
+                                              public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                                                  int pos=spinner.getSelectedItemPosition();
+                                                  selectedPaymentMode=PocketBankConstant.paymentMap.get(pos);
+                                              }
+
+                                              @Override
+                                              public void onNothingSelected(AdapterView<?> adapterView) {
+
+                                              }
+                                          });
 
 
         /**
@@ -217,14 +243,21 @@ public class AddTransactionActivity extends AppCompatActivity  {
         // creating shared preferences code stop
     }
 
+
+
+
+
+
+
+
     /**
      * Shows fields when user clicks on add more values
      */
-    private void loadotherfields() {
-        loadmorelayout.setVisibility(View.GONE);
-        placeslayout.setVisibility(View.VISIBLE);
-        imageslayout.setVisibility(View.VISIBLE);
-    }
+//    private void loadotherfields() {
+//        loadmorelayout.setVisibility(View.GONE);
+//        placeslayout.setVisibility(View.VISIBLE);
+//        imageslayout.setVisibility(View.VISIBLE);
+//    }
 
 
     public void showDatePickerDialog(View v) {
@@ -242,6 +275,7 @@ public class AddTransactionActivity extends AppCompatActivity  {
                     Bundle extras = data.getExtras();
                     Bitmap imageBitmap = (Bitmap) extras.get("data");
                     uploadedimage.setImageBitmap(imageBitmap);
+                    // pathToImage = imageBitmap.getPath();
                 }
                 break;
 
@@ -252,7 +286,8 @@ public class AddTransactionActivity extends AppCompatActivity  {
                         Uri selectedImageUri = data.getData();
                         selectedPath = getPath(selectedImageUri);
                         uploadedimage.setImageURI(selectedImageUri);
-//                                Log.d("selectedPath1 : " ,selectedPath);
+                        pathToImage = selectedImageUri.getPath();
+                                Log.d("pathToImage : " ,pathToImage);
                     } else {
                         Log.d("selectedPath1 : ", "Came here its null !");
                     }
@@ -317,6 +352,13 @@ public class AddTransactionActivity extends AppCompatActivity  {
             saveTransaction();
 
         }
+
+        if(id == android.R.id.home){
+            Intent intent = new Intent(this, HomeActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -330,11 +372,10 @@ public class AddTransactionActivity extends AppCompatActivity  {
         transaction.setDate(tDate);
         transaction.setYear(tYear);
         transaction.setNotes(mTransactioNotes.getText().toString());
+        String convertedimage = "";
+        transaction.setDisplayImage(convertedimage);
         String defaultValue = "null";
-        PaymentMode paymentMode = new PaymentMode();
-        paymentMode.setCardId(1);
-        paymentMode.setCardNumber(1234);
-        paymentMode.setCardType("Debit");
+        transaction.setPaymentMode(selectedPaymentMode);
         String uid = sharedPref.getString("uid", defaultValue);
         transaction.setUid(uid);
 /*        DatabaseReference mypostref = mDatabase.push();
@@ -349,13 +390,39 @@ public class AddTransactionActivity extends AppCompatActivity  {
         mypostref1.setValue(transaction);
         mypostref1.keepSynced(true);
         String categoryId = mypostref1.getKey();
-        DatabaseReference mypostref2 = mDatabase.child(uid).child(String.valueOf(tYear)).child(selectedMonth).child("paymentMode").child(paymentMode.getCardType()).child(txnId).push();
+        DatabaseReference mypostref2 = mDatabase.child(uid).child(String.valueOf(tYear)).child(selectedMonth).child("paymentMode").child(selectedPaymentMode.getCardType()).child(txnId).push();
         mypostref2.setValue(transaction);
         mypostref2.keepSynced(true);
         String paymentId = mypostref1.getKey();
         Log.d("keyfire", "txnId " + txnId + " categoryId " + categoryId + " paymentId " + paymentId);
+
+        Toast toast = Toast.makeText(this, "Expense saved !", Toast.LENGTH_LONG);
+        toast.show();
+
+        Intent i = new Intent(this,HomeActivity.class);
+        startActivity(i);
+        finish();
+
     }
 
+    private String getbase64image() {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inSampleSize = 8;
+      //  Bitmap bitmap = BitmapFactory.decodeFile(pathToImage, options);
+
+        Bitmap bitmap = ((BitmapDrawable) uploadedimage.getDrawable()).getBitmap();
+
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+//        Log.d("Bitmap value" , bitmap.toString());
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+        byte[] bytes = baos.toByteArray();
+        String base64Image = Base64.encodeToString(bytes, Base64.DEFAULT);
+        Log.d("base64Image", base64Image);
+        return base64Image;
+
+        // we finally have our base64 string version of the image, save it.
+       // firebase.child("pic").setValue(base64Image);
+    }
 
 
 }

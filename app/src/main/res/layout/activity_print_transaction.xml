@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PrintTransaction">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/cateogorySpinner"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_plus_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/primary_text_light"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <com.jaredrummler.materialspinner.MaterialSpinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/common_plus_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/black"
+      />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generatePDF"
+        android:text="View and Save Report"
+        android:background="#00BFFF"
+        android:textColor="#FFFFFF"
+        android:padding="7dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

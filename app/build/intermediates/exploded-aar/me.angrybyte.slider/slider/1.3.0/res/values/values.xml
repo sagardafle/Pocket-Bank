@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularSlider"><attr format="float" name="start_angle"/><attr format="float" name="angle"/><attr format="dimension" name="border_thickness"/><attr format="color" name="border_color"/><attr format="dimension" name="thumb_size"/><attr format="reference" name="thumb_image"/><attr format="color" name="thumb_color"/></declare-styleable>
+    <string name="app_name">Circular Slider</string>
+</resources>
